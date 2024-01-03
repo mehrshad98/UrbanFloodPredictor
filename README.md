@@ -47,10 +47,11 @@ Used Logistic Regression as a baseline model for its simplicity and interpretabi
 
 **Classification Report:**
 
-              precision |   recall  | f1-score
-
-         0.0       0.93      0.96      0.94  
-         1.0       0.73      0.62      0.67 
+|    Precision    |    Recall    |    F1-Score   |
+|:---------------:|:------------:|:-------------:|
+|      0.0        |     0.93     |     0.96      |     0.94      |
+|      1.0        |     0.73     |     0.62      |     0.67      |
+ 
 
 ## Files
 - **main_script.py:** Python script containing the predictive model.
