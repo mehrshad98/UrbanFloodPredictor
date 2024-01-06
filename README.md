@@ -33,29 +33,30 @@ Implemented PCA for dimensionality reduction, capturing essential information wh
 **Logistic Regression:**
 Used Logistic Regression as a baseline model for its simplicity and interpretability.
 
-## Model Evaluation
+## Models Evaluation
 
-**Accuracy:** 90%
+### K-Nearest Neighbors (KNN) Classifier:
+- **Accuracy:** 0.8394
+- **Precision:** 0.88 (Class 0), 0.53 (Class 1)
+- **Recall:** 0.94 (Class 0), 0.35 (Class 1)
+- **F1-Score:** 0.91 (Class 0), 0.42 (Class 1)
+- **Support:** 265947 instances of Class 0, 53127 instances of Class 1
 
-**Confusion Matrix:**
+### Logistic Regression Classifier:
+- **Accuracy:** 0.8326
+- **Precision:** 0.84 (Class 0), 0.47 (Class 1)
+- **Recall:** 0.99 (Class 0), 0.04 (Class 1)
+- **F1-Score:** 0.91 (Class 0), 0.07 (Class 1)
+- **Support:** 265947 instances of Class 0, 53127 instances of Class 1
 
-|           | Predicted 0 | Predicted 1 |
-|-----------|-------------|-------------|
-| **Actual 0** | 207313      | 9714        |
-| **Actual 1** | 16235       | 26538       |
+### Decision Tree Classifier:
+- **Accuracy:** 0.8978
+- **Precision:** 0.93 (Class 0), 0.73 (Class 1)
+- **Recall:** 0.95 (Class 0), 0.62 (Class 1)
+- **F1-Score:** 0.94 (Class 0), 0.67 (Class 1)
+- **Support:** 265947 instances of Class 0, 53127 instances of Class 1
 
-
-**Classification Report:**
-
-|    Precision    |    Recall    |    F1-Score   |
-|:---------------:|:------------:|:-------------:|
-|      0.0        |     0.93     |     0.96      |     0.94      |
-|      1.0        |     0.73     |     0.62      |     0.67      |
- 
-
-## Files
-- **main_script.py:** Python script containing the predictive model.
-- **notebook.ipynb:** Jupyter notebook with code and explanations.
+In summary, the Decision Tree classifier outperforms both K-Nearest Neighbors (KNN) and Logistic Regression in terms of accuracy and F1-Score on this dataset. It demonstrates higher precision and recall for both classes, indicating better overall performance.
 
 ## Usage
 - Clone the code
